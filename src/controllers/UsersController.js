@@ -26,10 +26,10 @@ class UsersController {
 
    async update(request, response) {
       const { name, email, password, old_password } = request.body;
-      const { id } = request.params;
+      const user_id = request.user.id;
 
-      const userData = await knex("users").where({ id });
-      const user = userData.find(( user ) => user.id === Number(id));
+      const userData = await knex("users").where({ id: user_id });
+      const user = userData.find(( user ) => user.id === Number(user_id));
 
       const userWithUpdatedEmailData = await knex("users").where({ email });
       const userWithUpdatedEmail = userWithUpdatedEmailData.find(( user ) => user.email === email);
@@ -61,16 +61,16 @@ class UsersController {
 
       await knex("users").update({ 
          name: user.name, email: user.email, password: user.password 
-      }).where({ id });
+      }).where({ id: user_id });
 
       return response.status(200).json();
    }
 
    async show(request, response) {
-      const { id } = request.params;
+      const user_id = request.user.id;
       
-      const user = await knex("users").where({ id });
-      const checkUserExists = user.find(( user ) => user.id === Number(id));
+      const user = await knex("users").where({ id: user_id });
+      const checkUserExists = user.find(( user ) => user.id === Number(user_id));
       
       if ( !checkUserExists ) {
          throw new AppError("Usuário não encontrado!");
