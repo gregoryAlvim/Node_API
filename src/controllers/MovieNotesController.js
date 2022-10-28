@@ -79,9 +79,7 @@ class MovieNotesController {
       });
       
       if (notesWithTags.length === 0) {
-         return response.json({
-            message: " Nenhuma nota encontrada para este usuário! ",
-         });
+         throw new AppError(" Nenhuma nota foi encontrada com este título! ");
       }
 
       return response.json(notesWithTags);
@@ -90,7 +88,7 @@ class MovieNotesController {
    async show(request, response) {
       const { id } = request.params;
 
-      const note = await knex("movie_notes").where({ id });
+      const note = await knex("movie_notes").where({ id }).first();
       const tags = await knex("movie_tags").where({ note_id: id }).orderBy("name");
 
       return response.json({
