@@ -11,7 +11,6 @@ const usersController = new UsersController();
 const upload = multer(uploadConfig.MULTER);
 const usersRoutes = Router();
 
-
 usersRoutes.post("/", usersController.create);
 usersRoutes.get("/show-user", ensureAuthenticated, usersController.show);
 usersRoutes.get("/", ensureAuthenticated, usersController.index);
