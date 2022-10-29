@@ -165,3 +165,27 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 
 #
 <!-- --------------------------------------------------------------------- -->
+### Route Movie Tags
+
+#### Get all tags
+
+```http
+  GET /movie-tags
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+|  |  | Return all tags of movie |
+#
+<!-- --------------------------------------------------------------------- -->
+### Route Files
+
+#### Get image
+
+```http
+  GET /files/"nameFile.ext"
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `nameFile.ext`      | `string` | **Required**. Name image file to get  |
