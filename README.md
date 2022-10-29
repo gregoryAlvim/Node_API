@@ -2,10 +2,6 @@
 
 <br/>
 
-<h4 align="center">
-   🚧 README em construção... 🚧
-</h4>
-
 <p align="center"> Backend da aplicação desenvolvido com JavaScript e Node.js </p>
 
 #
