@@ -7,9 +7,9 @@
 #
 
 <p align="center">
-   <a href="#sobre">Sobre </a> •
+   <a href="#sobre"> Sobre </a> •
    <a href="#tecnologias"> Tecnologias </a> •
-   <a href="#api reference"> API Reference </a> •
+   <a href="#API"> API Reference </a> •
    <a href="#autor"> Autor </a>
 </p>
 
