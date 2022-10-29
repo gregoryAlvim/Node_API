@@ -9,7 +9,7 @@
 <p align="center">
    <a href="#sobre">Sobre </a> •
    <a href="#tecnologias"> Tecnologias </a> •
-   <a href="#apireference"> API Reference </a> •
+   <a href="#api reference"> API Reference </a> •
    <a href="#autor"> Autor </a>
 </p>
 
@@ -185,3 +185,25 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `nameFile.ext`      | `string` | **Required**. Name image file to get  |
+
+## Autor and Contact
+
+<div> 
+  <a href="https://www.linkedin.com/in/grégory-alvim/" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank">
+  </a>
+
+  <a href="https://instagram.com/gregori_alvim" target="_blank">
+    <img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank">
+  </a>
+
+  <a href = "mailto:gregori.alvim@gmail.com">
+    <img alt="Mail" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
+  </a>
+</div>
+
+
+&nbsp;
+
+
+<p align="center"> Made with 💙 by Grégory Alvim </p>
