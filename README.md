@@ -43,6 +43,8 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 | :-------- | :------- | :------------------------- |
 | `email`      | `string` | **Required**. E-mail to login |
 | `password`      | `string` | **Required**. Password to login  |
+
+#
 <!-- --------------------------------------------------------------------- -->
 ### Routes Users
 
@@ -91,3 +93,75 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 | `email`      | `string` | E-mail |
 | `password`      | `string` | **Required**. New password  |
 | `old_password`      | `string` | **Required**. Old password  |
+
+#### Update user avatar
+
+```http
+  PATCH /users/avatar
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `avatar`      | `MULTIPART` | **Required**. Image file  |
+
+#
+<!-- --------------------------------------------------------------------- -->
+### Routes Movie Notes
+
+#### Get all movies
+
+```http
+  GET /movie-notes
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+|  |  | Return all movies |
+
+#### Get all movies
+
+```http
+  GET /movie-notes
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+|  |  | Return all movies |
+
+#### Get movie
+
+```http
+  GET /movie-notes/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. id of movie to fetch |
+|  |  | Return the movie |
+
+#### Create movie
+
+```http
+  POST /movie-notes
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `title`      | `string` | **Required**. Title movie  |
+| `description`      | `string` | **Required**. Description movie |
+| `rating`      | `string` | **Required**. Rating movie  |
+| `tags`      | `Array` | **Required**. Array with the tags movie  |
+
+#### Delete movie
+
+```http
+  DELETE /movie-notes/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. id of movie to delete |
+|  |  | Delete the movie |
+
+#
+<!-- --------------------------------------------------------------------- -->
