@@ -91,25 +91,3 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 | `email`      | `string` | E-mail |
 | `password`      | `string` | **Required**. New password  |
 | `old_password`      | `string` | **Required**. Old password  |
-
-### Routes GAMES
-#### Get all games
-
-```http
-  GET /games
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-|  |  | Return all ads |
-
-
-#### Show a game
-
-```http
-  GET /games/{gameId}
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `id`      | `string` | **Required**. id of game to fetch |
