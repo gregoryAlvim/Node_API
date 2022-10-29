@@ -9,8 +9,8 @@
 <p align="center">
    <a href="#sobre"> Sobre </a> •
    <a href="#tecnologias"> Tecnologias </a> •
-   <a href="#API"> API Reference </a> •
-   <a href="#autor"> Autor </a>
+   <a href="#api"> API Reference </a> •
+   <a href="#contact"> Contact </a>
 </p>
 
 <br/>
@@ -25,7 +25,7 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 - ``Express``
 - ``JavaScript``
 
-## API Reference
+## API
 <!-- --------------------------------------------------------------------- -->
 ### Route Sessions
 
@@ -186,7 +186,7 @@ O Rocket Movies é uma aplicação para salvar e gerenciar os filmes que você j
 | :-------- | :------- | :------------------------- |
 | `nameFile.ext`      | `string` | **Required**. Name image file to get  |
 
-## Autor and Contact
+## Contact
 
 <div> 
   <a href="https://www.linkedin.com/in/grégory-alvim/" target="_blank">
