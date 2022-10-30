@@ -1,4 +1,5 @@
 require("express-async-errors");
+require("dotenv/config");
 
 const sqliteConnection = require("./database/sqlite");
 const AppError = require("./utils/AppError");
@@ -11,7 +12,7 @@ const cors = require("cors");
 sqliteConnection();
 
 const application = express();
-const PORT = 3333;
+const PORT = process.env.PORT || 3333;
 
 application.use(cors());
 
